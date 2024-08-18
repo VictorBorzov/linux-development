@@ -14,3 +14,7 @@ Syllabus:
   ﻿docker run -it osll/mooc:v1 /bin/bash﻿
 #+end_src
 
+* References
+
+- https://stepik.org/course/548
+- https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/pages/lecture-notes/
