@@ -8,3 +8,4 @@ lib: solution.c
 
 clean:
 	- rm libsolution.so solution 2>/dev/null
+
