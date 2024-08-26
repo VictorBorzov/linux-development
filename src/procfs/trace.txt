@@ -1,0 +1,38 @@
+execve("./examlpe", ["./examlpe"], 0x7ffda61ffe60 /* 74 vars */) = 0
+brk(NULL)                               = 0x2105000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe22f707000
+access("/etc/ld-nix.so.preload", R_OK)  = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/nix/store/m71p7f0nymb19yn1dascklyya2i96jfw-glibc-2.39-52/lib/glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/nix/store/m71p7f0nymb19yn1dascklyya2i96jfw-glibc-2.39-52/lib/glibc-hwcaps/x86-64-v3/", 0x7ffc536de830, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/nix/store/m71p7f0nymb19yn1dascklyya2i96jfw-glibc-2.39-52/lib/glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/nix/store/m71p7f0nymb19yn1dascklyya2i96jfw-glibc-2.39-52/lib/glibc-hwcaps/x86-64-v2/", 0x7ffc536de830, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/nix/store/m71p7f0nymb19yn1dascklyya2i96jfw-glibc-2.39-52/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\243\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+fstat(3, {st_mode=S_IFREG|0555, st_size=2326560, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2059664, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe22f510000
+mmap(0x7fe22f538000, 1466368, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7fe22f538000
+mmap(0x7fe22f69e000, 352256, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18e000) = 0x7fe22f69e000
+mmap(0x7fe22f6f4000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e3000) = 0x7fe22f6f4000
+mmap(0x7fe22f6fa000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe22f6fa000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe22f50d000
+arch_prctl(ARCH_SET_FS, 0x7fe22f50d740) = 0
+set_tid_address(0x7fe22f50da10)         = 24338
+set_robust_list(0x7fe22f50da20, 24)     = 0
+rseq(0x7fe22f50e060, 0x20, 0, 0x53053053) = 0
+mprotect(0x7fe22f6f4000, 16384, PROT_READ) = 0
+mprotect(0x403000, 4096, PROT_READ)     = 0
+mprotect(0x7fe22f73d000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+getrandom("\x70\x92\x99\x14\xe3\x91\xc7\x3e", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x2105000
+brk(0x2126000)                          = 0x2126000
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+write(1, "What is your name? __", 21)   = 21
+read(0, "test\n", 1024)                 = 5
+write(1, "Hello test\n\n", 12)          = 12
+exit_group(12)                          = ?
++++ exited with 12 +++
