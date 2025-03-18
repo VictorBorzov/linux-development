@@ -1,6 +1,6 @@
 #include "hello.h"
 
 int main() {
-  hello_message("urmom");
-  return 0;
+	hello_message("urmom");
+	return 0;
 }
